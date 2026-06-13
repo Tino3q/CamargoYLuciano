@@ -4,11 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "../supabase/supabaseClient";
 import logo from "../assets/Logo.png";
 import "../Login.css";
+import.meta.env.VITE_SUPABASE_URL
+import.meta.env.VITE_SUPABASE_ANON_KEY
 
 function Login() {
   const navigate = useNavigate();
-    console.log("SUPABASE_URL:", import.meta.env.VITE_SUPABASE_URL);
-    console.log("SUPABASE_KEY:", import.meta.env.VITE_SUPABASE_ANON_KEY);
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
