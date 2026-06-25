@@ -10,6 +10,14 @@
   padding: 0 30px;
 
   border-bottom: 1px solid #e9ecef;
+  /* ... tus estilos actuales (display flex, padding, etc.) ... */
+
+  /* Agrega estas 4 líneas clave: */
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background-color: #ffffff; /* Asegúrate de que tenga color de fondo */
+
 }
 
 .search-box {

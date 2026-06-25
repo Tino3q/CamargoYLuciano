@@ -10,6 +10,14 @@
   padding: 20px;
 
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  /* ... tus estilos actuales de color de fondo, ancho, etc. ... */
+
+  /* Agrega estas 3 líneas clave: */
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Obliga a que mida exactamente el 100% de la altura de la pantalla */
+  overflow-y: auto; /* Agrega scroll solo al menú por si en el futuro tienes muchos botones */
+
 }
 
 .sidebar-header {

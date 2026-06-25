@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import RegistrarPaciente from "./pages/ReegistrarPaciente";
 import BuscarPaciente from "./pages/BuscarPaciente";
 import ConsultarHistorial from "./pages/ConsultarHistorial";
+import AtencionMedica from "./pages/AtencionMedica";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route
           path="/historial"
           element={<ConsultarHistorial />}
+        />
+          <Route
+          path="/atencion"
+          element={<AtencionMedica />}
         />
       </Routes>
     </BrowserRouter>
