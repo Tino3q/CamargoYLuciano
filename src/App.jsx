@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Inventario from "./pages/Inventario";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro";
 import Home from "./pages/home";
@@ -18,6 +18,7 @@ function App() {
         <Route path="/registro" element={<Registro />} />
         <Route path="/home" element={<Home />} />
         <Route
+        
           path="/registrar-paciente"
           element={<RegistrarPaciente />}
         />
@@ -41,6 +42,10 @@ function App() {
         <Route
           path="/recetas"
           element={<Recetas />}
+        />
+        <Route
+          path="/inventario"
+          element={<Inventario />}
         />
       </Routes>
     </BrowserRouter>
